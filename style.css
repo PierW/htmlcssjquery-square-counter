@@ -1,0 +1,34 @@
+#container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  float: left;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+
+.square.left{
+  background-color: darkred;
+}
+
+.square.center{
+  background-color: black;
+  cursor: pointer;
+}
+
+.square.right{
+  background-color: darkgreen;
+}
